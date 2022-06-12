@@ -21,7 +21,7 @@ jobs:
           DOCKER_ACCESS_TOKEN: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN  }}
         run:
           docker login -u $DOCKER_USER -p $DOCKER_ACCESS_TOKEN
-          && docker build python__simple_app .
+          && docker build python__simple_app
 #       - name: Build image
 #         run:
 #           docker build python__simple_app .
